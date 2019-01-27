@@ -1,0 +1,48 @@
+The Classic Snake game
+----------------------
+
+This version of snake was written with the Borland Turbo C++ 3.0 compiler.
+As a result, you need to install Turbo C 3.0 to run the game.
+
+Follow these instructions to run the game:
+
+1) Install dosbox.
+   Dosbox is an emulator for DOS, you can install it with:
+   	  Linux: apt-get install dosbox
+      	  FreeBSD: pkg install dosbox
+	  Windows/Others: Get installer from https://www.dosbox.com/
+
+2) Install Turbo C 3.0
+   Create a directory called dosbox in some directory (result: $PATH/dosbox)
+   Inside this new directory, create a directory called TCSETUP (result: $PATH/dosbox/TCSETUP)
+
+   Unzip the tc3.zip (included in this repo) into the TCSETUP directory.
+
+   Execute dosbox.
+
+   Following commands at the DOS prompt:
+   	     mount C: $PATH/dosbox/TCSETUP (Note: Replace $PATH with your actual directory path)
+	     C:
+	     cd TCSETUP
+	     INSTALL.EXE
+
+   Here, enter C:\TCSETUP as the source path.
+   Enter C:\TC as the destination install path.
+   Start installation.
+
+   After installation is done, exit dosbox and copy the file Final.cpp into $PATH/dosbox/TC/BIN/
+
+3) Run the game
+
+   Execute dosbox:
+     mount C: $PATH/dosbox/TC
+     C:
+     cd BIN
+     TC.EXE
+
+     File -> Open File -> Final.CPP
+     Settings -> Linker -> Graphics Library (Select it if it is not selected)
+
+     Run -> Run
+
+     Enjoy!
