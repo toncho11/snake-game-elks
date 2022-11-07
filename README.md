@@ -9,7 +9,7 @@ Tasks:
 * use conio.h and dos.h provided by [libi86 project](https://github.com/tkchia/libi86/), hopefully all functions are ported 
 * create a port for graphics.h on top of Nano-X
   * [usage of Nano-X](https://github.com/jbruchon/elks/tree/master/elkscmd/nano-X/demos)
-  * Functions needed for this game are: `fillpoly`, `drawpoly`, `settextstyle`, `outtextstyle`, `outtextxy`, `setfillstyle`, `floodfill`, `setcolor`, `rectangle`. It seems the fill functions will be difficult. Maybe they should be replaced by `fillpoly` instead of `floodfill`. The fill finctions can be commented in the main menu for now.
+  * Functions needed for this game are: `fillpoly`, `drawpoly`, `settextstyle`, `outtextstyle`, `outtextxy`, `setfillstyle`, `floodfill`, `setcolor`, `rectangle`. It seems the fill functions will be difficult. Maybe they should be replaced by `fillpoly` instead of `floodfill`. The fill functions can be commented in the main menu for now. Or add new ones such as FillCircle().
   * The port should be something like that:
     * [outtextxy](https://www.geeksforgeeks.org/outtextxy-function-c/) -> [GrText](http://embedded.centurysoftware.com/docs/nx/GrText.html)
     * [rectangle](https://www.geeksforgeeks.org/draw-rectangle-c-graphics/) -> [GrRect](http://embedded.centurysoftware.com/docs/nx/GrRect.html)
