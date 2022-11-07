@@ -7,7 +7,7 @@ Tasks:
 * change the code to C
   * disable file management code for now
 * use conio.h provided by [libi86 project](https://github.com/tkchia/libi86/)
-* comment sound functions from out dos.h, port only delay() for now
+* comment sound functions from out dos.h, port only delay() for now, a port from [libi86 project](https://github.com/tkchia/libi86/) could be useful
 * create a port for graphics.h on top of Nano-X
   * [usage of Nano-X](https://github.com/jbruchon/elks/tree/master/elkscmd/nano-X/demos)
   * Functions needed for this game are: `fillpoly`, `drawpoly`, `settextstyle`, `outtextstyle`, `outtextxy`, `setfillstyle`, `floodfill`, `setcolor`, `rectangle`
