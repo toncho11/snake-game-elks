@@ -10,9 +10,9 @@ Tasks:
 * comment out sound functions in code (defined in dos.h), port only delay() for now, a port from [libi86 project](https://github.com/tkchia/libi86/) of dos.h could be useful
 * create a port for graphics.h on top of Nano-X
   * [usage of Nano-X](https://github.com/jbruchon/elks/tree/master/elkscmd/nano-X/demos)
-  * Functions needed for this game are: `fillpoly`, `drawpoly`, `settextstyle`, `outtextstyle`, `outtextxy`, `setfillstyle`, `floodfill`, `setcolor`, `rectangle`
+  * Functions needed for this game are: `fillpoly`, `drawpoly`, `settextstyle`, `outtextstyle`, `outtextxy`, `setfillstyle`, `floodfill`, `setcolor`, `rectangle`. It seems the fill functions will be difficult. Maybe they should be replaced by `fillpoly` instead of `floodfill`.
   * The port should be something like that:
-    * [outtextxy ](https://www.geeksforgeeks.org/outtextxy-function-c/) -> [GrText](http://embedded.centurysoftware.com/docs/nx/GrText.html)
+    * [outtextxy](https://www.geeksforgeeks.org/outtextxy-function-c/) -> [GrText](http://embedded.centurysoftware.com/docs/nx/GrText.html)
     * [rectangle](https://www.geeksforgeeks.org/draw-rectangle-c-graphics/) -> [GrRect](http://embedded.centurysoftware.com/docs/nx/GrRect.html)
   * Running over Nano-X port will be slow and it will probably require at least 286 to be playable
     
