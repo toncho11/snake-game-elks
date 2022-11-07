@@ -1,48 +1,17 @@
-The Classic Snake game
-----------------------
+# What is this fork?
 
-This version of snake was written with the Borland Turbo C++ 3.0 compiler.
-As a result, you need to install Turbo C 3.0 to run the game.
+This fork has an objective to compile this Snake game to [https://github.com/jbruchon/elks](ELKS) Linux by porting Turbo C functions to ELKS Linux.
 
-Follow these instructions to run the game:
+Tasks:
 
-1) Install dosbox.
-   Dosbox is an emulator for DOS, you can install it with:
-   	  Linux: apt-get install dosbox
-      	  FreeBSD: pkg install dosbox
-	  Windows/Others: Get installer from https://www.dosbox.com/
-
-2) Install Turbo C 3.0
-   Create a directory called dosbox in some directory (result: $PATH/dosbox)
-   Inside this new directory, create a directory called TCSETUP (result: $PATH/dosbox/TCSETUP)
-
-   Unzip the tc3.zip (included in this repo) into the TCSETUP directory.
-
-   Execute dosbox.
-
-   Following commands at the DOS prompt:
-   	     mount C: $PATH/dosbox/TCSETUP (Note: Replace $PATH with your actual directory path)
-	     C:
-	     cd TCSETUP
-	     INSTALL.EXE
-
-   Here, enter C:\TCSETUP as the source path.
-   Enter C:\TC as the destination install path.
-   Start installation.
-
-   After installation is done, exit dosbox and copy the file Final.cpp into $PATH/dosbox/TC/BIN/
-
-3) Run the game
-
-   Execute dosbox:
-     mount C: $PATH/dosbox/TC
-     C:
-     cd BIN
-     TC.EXE
-
-     File -> Open File -> Final.CPP
-     Settings -> Linker -> Graphics Library (Select it if it is not selected)
-
-     Run -> Run
-
-     Enjoy!
+* change the code to C
+  * disable file management code for now
+* use conio.h provided by [https://github.com/tkchia/libi86/](libi86 project)
+* comment out dos.h for now (port it later)
+* create a port for graphics.h on top of Nano-X
+  * [https://github.com/jbruchon/elks/tree/master/elkscmd/nano-X/demos](usage of Nano-X)
+  * The port should be something like that:
+    * [outtextxy ](https://www.geeksforgeeks.org/outtextxy-function-c/) -> [GrText](http://embedded.centurysoftware.com/docs/nx/GrText.html)
+    * [rectangle](https://www.geeksforgeeks.org/draw-rectangle-c-graphics/) -> [GrRect](http://embedded.centurysoftware.com/docs/nx/GrRect.html)
+    
+Alternatively I could use [https://github.com/jbruchon/elks/issues/871#issuecomment-1303608547](this).
