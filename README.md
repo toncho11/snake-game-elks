@@ -15,4 +15,4 @@ Tasks:
     * [rectangle](https://www.geeksforgeeks.org/draw-rectangle-c-graphics/) -> [GrRect](http://embedded.centurysoftware.com/docs/nx/GrRect.html)
   * Running over Nano-X port will be slow and it will probably require at least 286 to be playable
     
-Alternatively I could use [this](https://github.com/jbruchon/elks/issues/871#issuecomment-1303608547). It is the http://grx.gnu.de project that can be used in Linux console mode.
+Alternatively I could use [this](https://github.com/jbruchon/elks/issues/871#issuecomment-1303608547). It is the http://grx.gnu.de project that can be used in Linux console mode. Another option is: https://www.svgalib.org
