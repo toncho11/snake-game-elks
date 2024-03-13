@@ -2,6 +2,8 @@
 
 This fork has an objective to compile this Snake game to [ELKS](https://github.com/jbruchon/elks) Linux by porting Turbo C functions to ELKS Linux. This way we can enojoy the Snake game in ELKS and also create a mechanism to port Turbo C code to ELKS.
 
+Port https://github.com/daniilguit/openbgi to ELKS might be the best strategy. Home page of the project: https://openbgi.sourceforge.net/
+
 Tasks:
 
 * change the code to C
